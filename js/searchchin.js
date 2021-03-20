@@ -9,9 +9,9 @@ function search(){
       console.log("No input.")
    } else { 
        
-    window.open("https://cn.bing.com/search?q="+searchtext+"&FORM=BEHPTB")
+    window.open("https://cn.bing.com/search?q="+searchtext+"&FORM=BEHPTB&ensearch=0")
    
-    console.log("Search Url:https://cn.bing.com/search?q="+searchtext+"&FORM=BEHPTB")
+    console.log("Search Url:https://cn.bing.com/search?q="+searchtext+"&FORM=BEHPTB&ensearch=0")
 	
     console.log(console.error())
 
