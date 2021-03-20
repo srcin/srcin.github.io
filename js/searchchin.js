@@ -2,7 +2,6 @@
 The search.js is SearchIndex's core search 
 function.Chinese version.
 */
-
 function search(){
 	var searchtext = document.getElementById("searchinput").value
 
