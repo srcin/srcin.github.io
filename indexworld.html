@@ -5,9 +5,26 @@
 		<meta charset="utf-8" />
 		<title>Search Index</title>
         <script src="js/mouse.js"></script>
+<script src="js/mouse.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://www.recaptcha.net/recaptcha/api.js?render=6LeqTYcaAAAAAEQknhTsUZNMCStuu9Bu3evxvt12"></script>
+   <script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6LeqTYcaAAAAAEQknhTsUZNMCStuu9Bu3evxvt12', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+			search();
+          });
+        });
+      }
+  </script>
+
 		<link rel="stylesheet" href="css/otherstyle.css" type="text/css"/>
 		<link rel="stylesheet" href="css/searchbox.css" type="text/css"/>
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+
+
+
 	</head>
 	<body background="img/bgimg.jpg">
 
@@ -48,9 +65,8 @@
 <form id="formsearch" autocomplete="on" action="javascript:void(0);">
 
 		<input type="text" id="searchinput" class="srcbt"  placeholder="Place input search text" autofocus="autofocus" title="Search box"/>
-
-		<button onclick="search()" class="srcinpt" id="searchbutton" onmouseleave="leaveb()" onmousedown="clickb()" title="Search"><h3>Search</h3></button>
-		</div>
+		<button onclick="search()"  id="searchbutton" onmouseleave="leaveb()" onmousedown="clickb()" title="Search"><h3>Search</h3></button>
+	</div>
 </form>
 </br>
 </br>
