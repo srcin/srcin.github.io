@@ -1,9 +1,9 @@
 button{
-background-color: #377E9A;
+   background-color: #377E9A;
 	border: 0px solid #b3b3b3;
 	width: 11%;
+     vertical-align: middle;
 
-	margin-top: -2px;
 	position: absolute;
 	-webkit-border-top-left-radius: 0px;
 	-webkit-border-bottom-left-radius: 0px;
@@ -20,10 +20,11 @@ background-color: #377E9A;
 	border-bottom-right-radius: 100px;
 }
 input{
+	vertical-align: middle;
 	background-color: #FFFFFF;
 	border: 2px solid #b3b3b3;
-	width: 89%;
-margin-left: -5;
+	width: 87%;
+    margin-left: -5;
 	padding-right: 10px;
 	font-size: larger;
 	-webkit-border-top-left-radius: 0px;

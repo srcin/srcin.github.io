@@ -5,7 +5,7 @@ function.World version.
 
 function search(){
 	var searchtext = document.getElementById("searchinput").value
-
+      
    if (searchtext == "") {
       console.log("No input.")
    } else { 
