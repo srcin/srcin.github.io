@@ -9,22 +9,26 @@
          <script src="https://www.recaptcha.net/recaptcha/api.js?render=6LdU-ocaAAAAAApf3sqN3T5LaZq7Sm9IR00FEG43"></script>
 
             <script>
-	      document.getElementById("searchbuttoncn").disable = true;
-              function onClick(n) {
-                 n.preventDefault();
+	      document.getElementById("searchbuttonen").disable = true;
+	      
+              function onClick(o) {
+		
+                 o.preventDefault();
+		      
                  grecaptcha.ready(function() {
 
               
 
                    grecaptcha.execute('6LdU-ocaAAAAAApf3sqN3T5LaZq7Sm9IR00FEG43', {action: 'submit'}).then(function(token) {
                        // Add your logic to submit to your backend server here.
-         	       document.getElementById("searchbuttoncn").disable = false;
-		  
+         	       document.getElementById("searchbuttonen").disable = false;
+                      
                         
                  
                  });
                } 
            </script>
+         
          
 
 		<link rel="stylesheet" href="css/otherstyle.css" type="text/css"/>
@@ -73,7 +77,7 @@
 <form id="formsearch" autocomplete="on" action="javascript:void(0);">
 
 		<input type="text" id="searchinput" class="srcbt"  placeholder="Place input search text" autofocus="autofocus" title="Search box"/>
-		<button onclick="search()"  id="searchbutton" onmouseleave="leaveb()" onmousedown="clickb()" title="Search"><h3>Search</h3></button>
+		<button onclick="search()"  id="searchbuttonen" onmouseleave="leaveb()" onmousedown="clickb()" title="Search"><h3>Search</h3></button>
 	</div>
 </form>
 </br>
