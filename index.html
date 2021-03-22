@@ -11,7 +11,7 @@
 
             <script>
 	      document.getElementById("searchbuttoncn").disable = true;
-              /* function onClick(o) {
+              function onClick(o) {
                  o.preventDefault();
                  grecaptcha.ready(function() {
 
@@ -19,11 +19,12 @@
 
                    grecaptcha.execute('6LdU-ocaAAAAAApf3sqN3T5LaZq7Sm9IR00FEG43', {action: 'submit'}).then(function(token) {
                        // Add your logic to submit to your backend server here.
-         	       
-
+         	       document.getElementById("searchbuttoncn").disable = false;
+		       document.getElementById("searchbuttoncn").onclick = search()
+                        
                  
                  });
-               } */
+               } 
            </script>
          
         <script src="js/mouse.js"></script>
