@@ -12,3 +12,9 @@ a{
 .leftlink{
 	float: right;
 }
+.weblinkdiv{
+	text-align: center;
+}
+.alink{
+	color: #000000;
+}
