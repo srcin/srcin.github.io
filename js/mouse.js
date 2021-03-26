@@ -5,7 +5,7 @@ function over(a){
 
 }
 function leave(b){
-	b.style.color = "#FFFFFF"
+	b.style.color = "#000000"
 	b.style.textDecoration = "none"
 
 }
