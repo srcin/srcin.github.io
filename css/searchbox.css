@@ -1,7 +1,7 @@
 button{
-   background-color: #377E9A;
+   background-color: #005999;
 	border: 0px solid #b3b3b3;
-	width: 11%;
+	width: 10%;
      vertical-align: middle;
 
 	position: absolute;
@@ -12,28 +12,27 @@ button{
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
 	
-	-webkit-border-top-right-radius: 100px;
-	-webkit-border-bottom-right-radius: 100px;
-	-moz-border-radius-topright: 100px;
-	-moz-border-radius-bottomright: 100px;
-	border-top-right-radius: 100px;
-	border-bottom-right-radius: 100px;
+-webkit-border-top-right-radius: 100px;
+-webkit-border-bottom-right-radius: 100px;
+-moz-border-radius-topright: 100px;
+-moz-border-radius-bottomright: 100px;
+border-top-right-radius: 100px;
+border-bottom-right-radius: 100px;
 }
 input{
 	vertical-align: middle;
 	background-color: #FFFFFF;
 	border: 2px solid #b3b3b3;
-	width: 87%;
+	width: 90%;
     margin-left: -5;
 	padding-right: 10px;
 	font-size: larger;
-	-webkit-border-top-left-radius: 0px;
-	-webkit-border-bottom-left-radius: 0px;
-	-moz-border-radius-topleft: 0px;
-	-moz-border-radius-bottomleft: 0px;
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-	
+-webkit-border-top-left-radius: 6px;
+-webkit-border-bottom-left-radius: 6px;
+-moz-border-radius-topleft: 6px;
+-moz-border-radius-bottomleft: 6px;
+border-top-left-radius: 6px;
+border-bottom-left-radius: 6px;
 	-webkit-border-top-right-radius: 0px;
 	-webkit-border-bottom-right-radius: 0px;
 	-moz-border-radius-topright: 0px;
@@ -43,7 +42,8 @@ input{
 	
 }
 .srcfm{
-     padding-left: 0px;
+     padding-left:0px;
+	 text-align: left;
 	
 }
 h3{
@@ -55,4 +55,7 @@ input{
 }
 button{
 	height: 50px;
+}
+.searchbi{
+       text-align: left;
 }
