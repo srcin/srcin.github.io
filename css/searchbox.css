@@ -1,7 +1,7 @@
 button{
    background-color: #005999;
 	border: 0px solid #b3b3b3;
-	width: 10%;
+	width: 12%;
      vertical-align: middle;
 
 	position: absolute;
@@ -23,7 +23,7 @@ input{
 	vertical-align: middle;
 	background-color: #FFFFFF;
 	border: 2px solid #b3b3b3;
-	width: 90%;
+	width: 87%;
     margin-left: -5;
 	padding-right: 10px;
 	font-size: larger;
