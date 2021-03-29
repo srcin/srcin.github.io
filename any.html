@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script src="https://hcaptcha.com/1/api.js" async defer></script>
+		<script>
+			function jim(){
+				alert("007");
+			}
+			function err(){
+				alert("err");
+			}
+		</script>
+		<button type="button"  class="h-captcha" data-sitekey="dw3sxqawsexsqawsza2hu1122wsw-21212asza.zz-00" data-callback="jim">
+			bathtub
+		</button>
+		<div
+		  class="h-captcha"
+		  data-sitekey="dw3sxqawsexsqawsza2hu1122wsw-21212asza.zz-00"
+		  data-theme="light"
+		  data-error-callback="onError"
+		></div>
+		<script type="text/javascript">
+		  hcaptcha.render('captcha-1', {
+		    sitekey: 'dw3sxqawsexsqawsza2hu1122wsw-21212asza.zz-00',
+		    theme: 'light',
+		    'error-callback': 'err',
+		  });
+		</script>
+	</body>
+</html>
