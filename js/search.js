@@ -13,7 +13,7 @@ function search(){
 	
 	srcf.submit()
 	
-    window.open("https://www.bing.com/search?q="+searchtext+"&ensearch=1&FORM=BESBTP")
+    window.open("https://www.bing.com/search?q="+searchtext+"&ensearch=1&FORM=BESBTP","_self")
    
     console.log("Search Url:https://www.bing.com/search?q="+searchtext+"&ensearch=1&FORM=BESBTP")
 	

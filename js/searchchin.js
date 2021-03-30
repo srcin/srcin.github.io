@@ -15,7 +15,7 @@ function search(){
   
   srcf.submit()
   
-    window.open("https://cn.bing.com/search?q="+searchtext+"&FORM=BESBTB&ensearch=0")
+    window.open("https://cn.bing.com/search?q="+searchtext+"&FORM=BESBTB&ensearch=0","_self")
    
     console.log("Search Url:https://cn.bing.com/search?q="+searchtext+"&FORM=BESBTB&ensearch=0")
 	
