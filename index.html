@@ -10,28 +10,9 @@ Start Code
 		<title>Search Index</title>
          <script src="js/mouse.js" type="text/javascript" charset="utf-8"></script>
 
-         <script src="https://www.recaptcha.net/recaptcha/api.js?render=6LeqTYcaAAAAAEQknhTsUZNMCStuu9Bu3evxvt12"></script>
+         <script src="https://www.recaptcha.net/recaptcha/api.js"></script>
 
-            <script>
-	      document.getElementById("searchbuttoncn").disable = true;
-	      
-              function onClick(o) {
-		
-                 o.preventDefault();
-		      
-                 grecaptcha.ready(function() {
 
-              
-
-                   grecaptcha.execute('6LeqTYcaAAAAAEQknhTsUZNMCStuu9Bu3evxvt12', {action: 'submit'}).then(function(token) {
-                       // Add your logic to submit to your backend server here.
-         	       document.getElementById("searchbuttoncn").disable = false;
-                      
-                        
-                 
-                 });
-               } 
-           </script>
          
         <script src="js/mouse.js"></script>
 		<link rel="stylesheet" href="css/otherstyle.css" type="text/css"/>
@@ -71,10 +52,13 @@ Start Code
 <form id="formsearch" autocomplete="on" action="javascript:void(0);" class="srcfm">
 
 		<input type="text" id="searchinput" class="srcbt"  placeholder="请输入搜索内容" autofocus="autofocus" title="搜索框"/>
-		<button onclick="search()" id="searchbuttoncn" title="搜索"><h3>搜索</h3></button>
+		<button class="g-recaptcha" data-sitekey="6LeqTYcaAAAAAEQknhTsUZNMCStuu9Bu3evxvt12" data-callback="search" id="searchbuttoncn" title="搜索"><h3>搜索</h3></button>
+		
 		
 </form>
 			<div class="weblink">
+				<br>
+				<br/>
 				<div class="wellweb">
 					<div class="weblinkdiv">
 						

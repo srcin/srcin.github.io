@@ -9,28 +9,8 @@ Start Code
 		<title>Search Index</title>
         <script src="js/mouse.js"></script>
 <script src="js/mouse.js" type="text/javascript" charset="utf-8"></script>
-         <script src="https://www.recaptcha.net/recaptcha/api.js?render=6LeqTYcaAAAAAEQknhTsUZNMCStuu9Bu3evxvt12"></script>
+         <script src="https://www.recaptcha.net/recaptcha/api.js"></script>
 
-            <script>
-	      document.getElementById("searchbuttonen").disable = true;
-	      
-              function onClick(o) {
-		
-                 o.preventDefault();
-		      
-                 grecaptcha.ready(function() {
-
-              
-
-                   grecaptcha.execute('6LeqTYcaAAAAAEQknhTsUZNMCStuu9Bu3evxvt12', {action: 'submit'}).then(function(token) {
-                       // Add your logic to submit to your backend server here.
-         	       document.getElementById("searchbuttonen").disable = false;
-                      
-                        
-                 
-                 });
-               } 
-           </script>
          
          
 
@@ -73,9 +53,11 @@ Start Code
 <form id="formsearch" autocomplete="on" action="javascript:void(0);">
 
 		<input type="text" id="searchinput" class="srcbt"  placeholder="Place input search text" autofocus="autofocus" title="Search box"/>
-		<button onclick="search()"  id="searchbuttonen" onmouseleave="leaveb()" onmousedown="clickb()" title="Search"><h3>Search</h3></button>
+		<button  class="g-recaptcha" data-sitekey="6LeqTYcaAAAAAEQknhTsUZNMCStuu9Bu3evxvt12" data-callback="search"  id="searchbuttonen" onmouseleave="leaveb()" onmousedown="clickb()" title="Search"><h3>Search</h3></button>
 	</div>
 </form>
+</br>
+</br>
 <div class="weblink">
 				<div class="wellweb">
 					<div class="weblinkdiv">
