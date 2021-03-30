@@ -59,3 +59,8 @@ button{
 .searchbi{
        text-align: left;
 }
+ .srcbt{
+	float:left;
+	min-width:85%;    				 
+					          
+}
